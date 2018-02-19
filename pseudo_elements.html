@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo Elements</title>
+    <style>
+        :root {
+            --color: red;
+            --block-color: #f3f3f3;
+        }
+
+        body {
+            margin: 0 0 0 10px;
+            padding: 0;
+        }
+
+        p, .bl {
+            background-color: var(--block-color);
+        }             
+
+        .wrapper p:first-child::first-letter {
+            font-size: 2em;
+            font-weight: bolder;
+            color: var(--color);
+        }
+        .wrapper p:nth-child(2)::first-line {
+            font-style: italic;
+            color: var(--color);
+        }
+
+        .bl::before {
+            content: "=================== START ===================";
+        }
+        .bl::after {
+            content: "==================== END ====================";
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam velit esse ex voluptatem. Eius, minima debitis vero veritatis necessitatibus in perspiciatis assumenda obcaecati explicabo non quae aperiam doloribus. Corporis ipsum, rem amet magni totam corrupti commodi, nam dolor repellat incidunt iure officia eligendi repellendus quo dignissimos fugit sequi fuga. Doloribus porro, asperiores cum voluptatem magnam assumenda, temporibus reprehenderit ea in veritatis provident. Animi quam ducimus a voluptate eaque accusantium cum ex fugit sit assumenda earum dicta, maiores nisi architecto numquam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam velit esse ex voluptatem. Eius, minima debitis vero veritatis necessitatibus in perspiciatis assumenda obcaecati explicabo non quae aperiam doloribus. Corporis ipsum, rem amet magni totam corrupti commodi, nam dolor repellat incidunt iure officia eligendi repellendus quo dignissimos fugit sequi fuga. Doloribus porro, asperiores cum voluptatem magnam assumenda, temporibus reprehenderit ea in veritatis provident. Animi quam ducimus a voluptate eaque accusantium cum ex fugit sit assumenda earum dicta, maiores nisi architecto numquam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam velit esse ex voluptatem. Eius, minima debitis vero veritatis necessitatibus in perspiciatis assumenda obcaecati explicabo non quae aperiam doloribus. Corporis ipsum, rem amet magni totam corrupti commodi, nam dolor repellat incidunt iure officia eligendi repellendus quo dignissimos fugit sequi fuga. Doloribus porro, asperiores cum voluptatem magnam assumenda, temporibus reprehenderit ea in veritatis provident. Animi quam ducimus a voluptate eaque accusantium cum ex fugit sit assumenda earum dicta, maiores nisi architecto numquam.</p>
+    </div>
+
+    <div class="bl">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam velit esse ex voluptatem. Eius, minima debitis vero veritatis necessitatibus in perspiciatis assumenda obcaecati explicabo non quae aperiam doloribus. Corporis ipsum, rem amet magni totam corrupti commodi, nam dolor repellat incidunt iure officia eligendi repellendus quo dignissimos fugit sequi fuga. Doloribus porro, asperiores cum voluptatem magnam assumenda, temporibus reprehenderit ea in veritatis provident. Animi quam ducimus a voluptate eaque accusantium cum ex fugit sit assumenda earum dicta, maiores nisi architecto numquam.
+        </div>
+    </div>
+</body>
+</html>
