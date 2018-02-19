@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo Selectors</title>
+    <style>
+        :root {
+            --void: #0e0b16;
+            --fuscia: #a239ca;
+            --jewel: #4717f6;
+            --stark: #e7dfdd;
+        }
+
+        li { 
+            list-style-type: none; 
+        }
+
+        li:first-child {
+            background-color: var(--fuscia);    
+            color: var(--stark);
+        }
+        li:nth-child(2) {
+            background-color: var(--jewel);    
+            color: var(--stark);
+        }
+        li:last-child {
+            background-color: var(--stark);    
+        }
+
+        li:only-child {
+            background-color: var(--void);
+            color: var(--stark);
+        }
+        
+        #multiline li {
+            color: var(--void);
+        }
+
+        #multiline > li {
+            color: var(--fuscia);
+        }
+
+        #multiline li:nth-child(2n) { /* odd */
+            background-color: var(--funscia);    
+        }
+
+        #multiline li:nth-child(2n+1) { /* even */
+            background-color: var(--stark);    
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Line #1</li>
+        <li>Line #2</li>
+        <li>Line #3</li>
+        <li>Line #4</li>
+        <li>Line #5</li>
+    </ul>
+
+    <ul class="list-style_type_none">
+            <li>Only one selector</li>
+    </ul>
+
+    <ul id="multiline">
+        <li>Line #1</li>
+        <li>Line #2</li>
+        <li>Line #3</li>
+        <li>Line #4</li>
+        <li>
+            <ul>
+                <li>Line #5.1</li>
+                <li>Line #5.2</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
