@@ -11,21 +11,22 @@
             --fuscia: #a239ca;
             --jewel: #4717f6;
             --stark: #e7dfdd;
+            --light-green: #eff7ef;
         }
 
         li { 
             list-style-type: none; 
         }
 
-        li:first-child {
+        #list-1 li:first-child {
             background-color: var(--fuscia);    
             color: var(--stark);
         }
-        li:nth-child(2) {
+        #list-1 li:nth-child(2) {
             background-color: var(--jewel);    
             color: var(--stark);
         }
-        li:last-child {
+        #list-1 li:last-child {
             background-color: var(--stark);    
         }
 
@@ -33,26 +34,26 @@
             background-color: var(--void);
             color: var(--stark);
         }
-        
-        #multiline li {
+
+        #list-3 li {
             color: var(--void);
         }
 
-        #multiline > li {
-            color: var(--fuscia);
+        #list-3 > li {  /* only higher level elemets have color jewel */
+            color: var(--jewel);
         }
 
-        #multiline li:nth-child(2n) { /* odd */
-            background-color: var(--funscia);    
+        #list-3 li:nth-child(2n) { /* odd */
+            background-color: var(--light-green);   
         }
 
-        #multiline li:nth-child(2n+1) { /* even */
+        #list-3 li:nth-child(2n+1) { /* even */
             background-color: var(--stark);    
         }
     </style>
 </head>
 <body>
-    <ul>
+    <ul id="list-1">
         <li>Line #1</li>
         <li>Line #2</li>
         <li>Line #3</li>
@@ -60,21 +61,21 @@
         <li>Line #5</li>
     </ul>
 
-    <ul class="list-style_type_none">
+    <ul id="list-2">
             <li>Only one selector</li>
     </ul>
 
-    <ul id="multiline">
+    <ul id="list-3">
         <li>Line #1</li>
         <li>Line #2</li>
         <li>Line #3</li>
-        <li>Line #4</li>
-        <li>
+        <li>Line #4<br />
             <ul>
-                <li>Line #5.1</li>
-                <li>Line #5.2</li>
+                <li>Line #4.1</li>
+                <li>Line #4.2</li>
             </ul>
         </li>
+        <li>Line #5</li>
     </ul>
 </body>
 </html>
