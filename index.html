@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Workshop</title>
+    <style>
+        :root {
+            --color: #4d4d4d;
+            --bg-color: #f3f3f3;
+        }
+        body {
+            background-color: dimgray;
+            color: white;
+        }
+        .wrapper {
+            color: var(--color);
+            display: grid;
+            grid-gap: 0.5em;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .wrapper > div {
+            background-color: var(--bg-color);
+            font-style: italic;
+            border: 1px solid gold;
+            padding: 1em;
+        }
+        .wrapper div span {
+            color: orange;
+        }
+        .wrapper #p5 {
+            grid-column-end: 3;
+            grid-row-end: 4;
+        }
+        .box {
+            background-color:blue; 
+            border: 5px solid green; 
+            margin: 30px 10px 0px 10px; /* top, right, bottom, left */
+        }
+        .box p {
+            display: block;
+            --offset: 1em;
+            margin-top: 0em;
+            margin-right: 0em;
+            margin-bottom: 0em;
+            margin-left: var(--offset);
+        }
+        .box > p.offset {
+            margin-left: calc(var(--offset) + 1.5em);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Workshop 1</h1>
+    <p>Re-arranging column example:</p>
+    <div class="wrapper">
+        <div id="p1"><span>p1</span>: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, saepe minus. Vitae iure voluptatem praesentium a molestiae sed quibusdam, natus cupiditate architecto autem labore mollitia numquam cumque odit earum id.</div>
+        <div id="p2"><span>p2</span>: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, saepe minus. Vitae iure voluptatem praesentium a molestiae sed quibusdam, natus cupiditate architecto autem labore mollitia numquam cumque odit earum id.</div>
+        <div id="p3"><span>p3</span>: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, saepe minus. Vitae iure voluptatem praesentium a molestiae sed quibusdam, natus cupiditate architecto autem labore mollitia numquam cumque odit earum id.</div>
+        <div id="p4"><span>p4</span>: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, saepe minus. Vitae iure voluptatem praesentium a molestiae sed quibusdam, natus cupiditate architecto autem labore mollitia numquam cumque odit earum id.</div>
+        <div id="p5"><span>p5</span>: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, saepe minus. Vitae iure voluptatem praesentium a molestiae sed quibusdam, natus cupiditate architecto autem labore mollitia numquam cumque odit earum id.</div>
+        <div id="p6"><span>p6</span>: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, saepe minus. Vitae iure voluptatem praesentium a molestiae sed quibusdam, natus cupiditate architecto autem labore mollitia numquam cumque odit earum id.</div>
+        <div id="p7"><span>p7</span>: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, saepe minus. Vitae iure voluptatem praesentium a molestiae sed quibusdam, natus cupiditate architecto autem labore mollitia numquam cumque odit earum id.</div>
+    </div>
+    <div class="box">
+        <p>Border tag: sequence dfinition</p>
+        <p class="offset">top</p>
+        <p class="offset">right</p>
+        <p class="offset">bottom</p>
+        <p class="offset">left</p>
+    </dev>
+</body>
+</html>
