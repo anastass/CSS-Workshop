@@ -33,6 +33,18 @@
             grid-column-end: 3;
             grid-row-end: 4;
         }
+
+        @media only screen and (min-width : 1200px) {
+            .wrapper {
+                grid-template-columns: repeat(5, 1fr);
+            }
+
+            .wrapper #p5 {
+                grid-column-end: 5;
+                grid-row-end: 3;
+            }
+        }
+
         .box {
             background-color:blue; 
             border: 5px solid green; 
