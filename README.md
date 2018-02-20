@@ -14,14 +14,19 @@
 ## VSCode plugins
 - [LiveServer](ttps://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
-## Links
-
+## Reference
 - [CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 - [JavaScript reference](https://developer.mozilla.org/bm/docs/Web/JavaScript/Reference)
 - [HTTP Messages](https://www.w3schools.com/tags/ref_httpmessages.asp)
-- [Tools I wish I had know when I started coding](http://msdn.com)
+- [SCSS ("Sassy CSS") documentation](https://sass-lang.com/documentation/)
 - [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+## Links
+- [Learn SASS](https://sass-lang.com/guide)
+- [How to Use Sass Mixins](https://scotch.io/tutorials/how-to-use-sass-mixins)
+- [Sass vs. SCSS: which syntax is better?](http://thesassway.com/editorial/sass-vs-scss-which-syntax-is-better)
+- [Tools I wish I had know when I started coding](https://medium.freecodecamp.org/tools-i-wish-i-had-known-about-when-i-started-coding-57849efd9248)
 
 ## Tools
 
@@ -37,3 +42,4 @@
 
 ### CSS Cooksbook
 - [CSS-Tricks](https://css-tricks.com/)
+- [10 Sass (SCSS) mixins you should be using in your projects](https://engageinteractive.co.uk/blog/top-10-scss-mixins)
