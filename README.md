@@ -8,6 +8,12 @@
     # Watch the sass directory for changes
     npm run sass-watch
 
+    # To kill Live Server use tcpview from sysinternals and kill the process listening port 5500
+    tcpview
+
+## VSCode plugins
+- [LiveServer](ttps://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
 ## Links
 
 - [CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)

@@ -1,0 +1,50 @@
+body {
+    font-size: 0.8em;
+}
+div {
+    padding: 8px; 
+}
+
+@mixin nested_style($units)  {
+    .one {
+        font-size: 1.2#{$units};
+    }
+    .two {
+        font-size: 1.2#{$units};
+    }
+    .three {
+        font-size: 1.2#{$units};
+    }
+    .box-odd {
+        background-color: #e4e2e2;
+    }
+    .box-even {
+        background-color: white;
+    }
+}
+
+#nested_classes_em {
+    @include nested_style(em)
+}
+
+#nested_classes_rem {
+    @include nested_style(rem)
+}
+
+.content {
+    margin-top: 0.2em;
+    width: 50%;
+    color: teal;
+}      
+
+.entire {
+    font-size: 1.2em;
+    color: #e4e2e2;
+    background-color: red;
+    height: 10vh;
+    width: 60vw;
+}
+
+.entire strong{
+    color: yellow;
+}
