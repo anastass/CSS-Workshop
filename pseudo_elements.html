@@ -5,38 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pseudo Elements</title>
-    <style>
-        :root {
-            --color: red;
-            --block-color: #f3f3f3;
-        }
-
-        body {
-            margin: 0 0 0 10px;
-            padding: 0;
-        }
-
-        p, .bl {
-            background-color: var(--block-color);
-        }             
-
-        .wrapper p:first-child::first-letter {
-            font-size: 2em;
-            font-weight: bolder;
-            color: var(--color);
-        }
-        .wrapper p:nth-child(2)::first-line {
-            font-style: italic;
-            color: var(--color);
-        }
-
-        .bl::before {
-            content: "=================== START ===================";
-        }
-        .bl::after {
-            content: "==================== END ====================";
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./css/pseudo_elements.css" />
 </head>
 <body>
     <h1>Pseudo Elements</h1>
