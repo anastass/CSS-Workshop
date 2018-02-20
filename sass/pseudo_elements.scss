@@ -1,7 +1,5 @@
-:root {
-    --color: red;
-    --block-color: #f3f3f3;
-}
+$color: red;
+$block-color: #f3f3f3;
 
 body {
     margin: 0 0 0 10px;
@@ -9,19 +7,19 @@ body {
 }
 
 p, .bl {
-    background-color: var(--block-color);
+    background-color: $block-color;
 }             
 
 .wrapper {
     p:first-child::first-letter {
         font-size: 2em;
         font-weight: bolder;
-        color: var(--color);
+        color: $color;
     }
 
     p:nth-child(2)::first-line {
         font-style: italic;
-        color: var(--color);
+        color: $color;
     }
 }
 

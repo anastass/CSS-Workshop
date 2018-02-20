@@ -1,22 +1,18 @@
-:root {
-  --color: red;
-  --block-color: #f3f3f3; }
-
 body {
   margin: 0 0 0 10px;
   padding: 0; }
 
 p, .bl {
-  background-color: var(--block-color); }
+  background-color: #f3f3f3; }
 
 .wrapper p:first-child::first-letter {
   font-size: 2em;
   font-weight: bolder;
-  color: var(--color); }
+  color: red; }
 
 .wrapper p:nth-child(2)::first-line {
   font-style: italic;
-  color: var(--color); }
+  color: red; }
 
 .bl::before {
   content: "=================== START ==================="; }
