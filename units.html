@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Units</title>
+    <style>
+        body {
+            font-size: 0.8em;
+        }
+        div {
+            padding: 8px; 
+        }
+        #nested_classes_em .one {
+            font-size: 1.2em;
+        }
+        #nested_classes_em .two {
+            font-size: 1.2em;
+        }
+        #nested_classes_em .three {
+            font-size: 1.2em;
+        }
+        #nested_classes_em .box-odd {
+            background-color: #e4e2e2;
+        }
+        #nested_classes_em .box-even {
+            background-color: white;
+        }
+
+        #nested_classes_rem .one {
+            font-size: 1.2rem;
+        }
+        #nested_classes_rem .two {
+            font-size: 1.2rem;
+        }
+        #nested_classes_rem .three {
+            font-size: 1.2rem;
+        }
+        #nested_classes_rem .box-odd {
+            background-color: #e4e2e2;
+        }
+        #nested_classes_rem .box-even {
+            background-color: white;
+        }
+
+        .content {
+            margin-top: 0.2em;
+            width: 50%;
+            color: teal;
+        }      
+        
+        .entire {
+            font-size: 1.2em;
+            color: #e4e2e2;
+            background-color: red;
+            height: 10vh;
+            width: 60vw;
+        }
+
+        .entire strong{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Units</h1>
+    <hr>
+
+    <!-- em - size of "M" (default font size 16px) -->
+    <div id="nested_classes_em">
+        <div class="one box-odd">
+            <strong>[font-size: 1.2em]</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis omnis sit beatae, libero quibusdam ut placeat, aspernatur ab ad quasi quos veritatis, exercitationem molestiae facilis quis sint voluptatibus expedita vero?
+            Porro iure minima perferendis, est beatae obcaecati nobis impedit eius dolor cumque voluptatum quidem neque quaerat quam facilis ratione quas. Hic quas modi id aliquam animi excepturi illum voluptatum accusamus!
+            Dignissimos quidem consequatur veritatis vitae praesentium necessitatibus, consectetur harum quis nostrum deleniti laboriosam quos aliquid eveniet, vero dolorem corporis ipsum. Dignissimos officiis rerum eligendi voluptates in, dolorum ipsum voluptas voluptatibus!
+            <div class="two box-even">
+                <strong>[font-size: 1.2em]</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis omnis sit beatae, libero quibusdam ut placeat, aspernatur ab ad quasi quos veritatis, exercitationem molestiae facilis quis sint voluptatibus expedita vero?
+                Porro iure minima perferendis, est beatae obcaecati nobis impedit eius dolor cumque voluptatum quidem neque quaerat quam facilis ratione quas. Hic quas modi id aliquam animi excepturi illum voluptatum accusamus!
+                Dignissimos quidem consequatur veritatis vitae praesentium necessitatibus, consectetur harum quis nostrum deleniti laboriosam quos aliquid eveniet, vero dolorem corporis ipsum. Dignissimos officiis rerum eligendi voluptates in, dolorum ipsum voluptas voluptatibus!
+                <div class="three box-odd">
+                    <strong>[font-size: 1.2em]</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis omnis sit beatae, libero quibusdam ut placeat, aspernatur ab ad quasi quos veritatis, exercitationem molestiae facilis quis sint voluptatibus expedita vero?
+                    Porro iure minima perferendis, est beatae obcaecati nobis impedit eius dolor cumque voluptatum quidem neque quaerat quam facilis ratione quas. Hic quas modi id aliquam animi excepturi illum voluptatum accusamus!
+                    Dignissimos quidem consequatur veritatis vitae praesentium necessitatibus, consectetur harum quis nostrum deleniti laboriosam quos aliquid eveniet, vero dolorem corporis ipsum. Dignissimos officiis rerum eligendi voluptates in, dolorum ipsum voluptas voluptatibus!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- rem - size of root "M" -->
+    <div id="nested_classes_rem">
+            <div class="one box-odd">
+            <strong>[font-size: 1.2rem]</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis omnis sit beatae, libero quibusdam ut placeat, aspernatur ab ad quasi quos veritatis, exercitationem molestiae facilis quis sint voluptatibus expedita vero?
+            Porro iure minima perferendis, est beatae obcaecati nobis impedit eius dolor cumque voluptatum quidem neque quaerat quam facilis ratione quas. Hic quas modi id aliquam animi excepturi illum voluptatum accusamus!
+            Dignissimos quidem consequatur veritatis vitae praesentium necessitatibus, consectetur harum quis nostrum deleniti laboriosam quos aliquid eveniet, vero dolorem corporis ipsum. Dignissimos officiis rerum eligendi voluptates in, dolorum ipsum voluptas voluptatibus!
+            <div class="two box-even">
+                <strong>[font-size: 1.2rem]</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis omnis sit beatae, libero quibusdam ut placeat, aspernatur ab ad quasi quos veritatis, exercitationem molestiae facilis quis sint voluptatibus expedita vero?
+                Porro iure minima perferendis, est beatae obcaecati nobis impedit eius dolor cumque voluptatum quidem neque quaerat quam facilis ratione quas. Hic quas modi id aliquam animi excepturi illum voluptatum accusamus!
+                Dignissimos quidem consequatur veritatis vitae praesentium necessitatibus, consectetur harum quis nostrum deleniti laboriosam quos aliquid eveniet, vero dolorem corporis ipsum. Dignissimos officiis rerum eligendi voluptates in, dolorum ipsum voluptas voluptatibus!
+                <div class="three box-odd">
+                    <strong>[font-size: 1.2rem]</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis omnis sit beatae, libero quibusdam ut placeat, aspernatur ab ad quasi quos veritatis, exercitationem molestiae facilis quis sint voluptatibus expedita vero?
+                    Porro iure minima perferendis, est beatae obcaecati nobis impedit eius dolor cumque voluptatum quidem neque quaerat quam facilis ratione quas. Hic quas modi id aliquam animi excepturi illum voluptatum accusamus!
+                    Dignissimos quidem consequatur veritatis vitae praesentium necessitatibus, consectetur harum quis nostrum deleniti laboriosam quos aliquid eveniet, vero dolorem corporis ipsum. Dignissimos officiis rerum eligendi voluptates in, dolorum ipsum voluptas voluptatibus!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="content">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias facilis deleniti accusamus cum repudiandae, amet, praesentium error numquam porro ducimus optio. Quos ipsam praesentium saepe nisi quis atque vitae reiciendis?
+    </p>
+
+    <p class="entire">While <strong>vh</strong> and <strong>vw</strong> are related to the vieport's height and width, <strong>vmin</strong> and <strong>vmax</strong> are related to the minimum and maximum of these values. It does depend on which is larger or smaller.</p>
+</body>
+</html>

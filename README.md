@@ -19,11 +19,15 @@
 
 ## Tools
 
-### CSS specificity
+### Useful tools
 - [Specificity Calculator](https://specificity.keegan.st/) - A visual way to understand [CSS specificity](https://www.w3.org/TR/selectors-3/#specificity)
+- [:nth Tester](https://css-tricks.com/examples/nth-child-tester/#)
 
 ### Colors
 - [140 HTML Color Names A - Z](http://www.html-color-names.com/)
 - [Material UI - Web Development Tools](https://www.materialui.co/)
 - [Coolors.co](https://coolors.co/) - online color palette generator
 - [Colorhunt.co](http://colorhunt.co/) - place to find color palettes that just work
+
+### CSS Cooksbook
+- [CSS-Tricks](https://css-tricks.com/)
