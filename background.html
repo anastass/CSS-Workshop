@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Background</title>
+    <style>
+        .bg {
+            height: 100vh;
+            background-image: url("https://static.pexels.com/photos/97050/pexels-photo-97050.jpeg");
+            background-repeat: no-repeat;
+            /* background-size: contain;
+            background-size: 50% auto;
+            background-size: 50% 20%;
+            background-size: cover; */
+            background-size: 500px;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        .doc p:last-child {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Background</h1>
+    <hr>
+
+    <div class="doc">
+        <p><strong>cover</strong> will cover the entire space required while keeping the aspect ratio of the image. Most times this will suffice.</p>
+        <p><strong>contain</strong> will contain the entire image within the space required. If more space is left, the background will be repeated.</p>
+    </div>
+
+    <div class="bg"></div>
+</body>
+</html>
