@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Box Model</title>
+    <style>
+        .center {
+            width: 250px;
+            height: 250px;
+            border: 2px solid red;
+            background-color: rgb(189,195,199);
+
+            /* applying auto to margin-left and margin-right center the box */
+            margin-left: auto;
+            margin-right: auto;
+
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        body {
+            background-color: #fff;
+            margin: 0; /*this will remove every outer space from body*/
+            padding: 0; /*this will remove every inner space from body*/
+            font-family: "Lucida Grande", "Lucida Sans Unicode",
+                "Lucida Sans", Verdana, Tahoma, sans-serif;
+            font-size: 0.75em;
+        }
+        .wrapper {
+            width: 80%;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-bottom: 40px;
+            margin-right: auto;
+            border: 2px solid red;
+            background-color: rgb(189,195,199);
+        }
+        p {
+            border: 2px solid blue; 
+            background-color: #8cacea;
+            color: #fff;
+        }
+        p.paddingtest {
+            padding: 2em;
+        }
+        p.margintest {
+            margin: 5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Box Model</h1>
+    <hr>
+
+    <div class="center"></div>
+
+    <div class="wrapper">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quod nobis vel consequatur et vero, dicta, ea architecto blanditiis placeat voluptas nostrum, omnis a voluptatem eaque? Ipsam corrupti asperiores porro.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quod nobis vel consequatur et vero, dicta, ea architecto blanditiis placeat voluptas nostrum, omnis a voluptatem eaque? Ipsam corrupti asperiores porro.</p>
+        <p class="paddingtest"><strong>padding:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, hic modi dignissimos animi debitis delectus atque esse quia. Voluptates blanditiis exercitationem molestiae. Ea fuga tempore inventore, doloribus pariatur consectetur nam.</p>
+        <p class="margintest"><strong>margin:</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut aliquam maxime sunt reiciendis vitae! Blanditiis molestiae ipsum placeat totam? Porro nulla hic quibusdam ipsum. Maiores numquam ratione sit quaerat! Possimus.</p>
+    </div>
+</body>
+</html>
