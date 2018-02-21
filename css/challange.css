@@ -1,0 +1,49 @@
+#solution h1 {
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 0px; }
+
+#solution h1 + p {
+  /* 
+        The adjacent sibling combinator (+) matches the second 
+        element only if it immediately follows the first element 
+        */
+  margin-top: 0; }
+
+#solution .highlight {
+  background-color: yellow; }
+
+#solution .justify {
+  text-align: justify; }
+
+#solution .center {
+  text-align: center; }
+
+#solution .caps {
+  text-transform: uppercase; }
+
+#solution .indent {
+  text-indent: 2em; }
+
+#solution .drop-cap:first-letter {
+  font-weight: bold;
+  font-size: 300%;
+  line-height: 1;
+  float: left;
+  /* uncomment this to see the effect */
+  width: 0.9em; }
+
+#solution a {
+  color: darkblue;
+  font-weight: bold; }
+
+#solution .no-link a {
+  color: red; }
+
+#solution .no-link a:hover {
+  color: teal; }
+
+highlight {
+  color: red;
+  background-color: #f9f2f4; }
+
+/*# sourceMappingURL=challange.css.map */
