@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Suprtman Movie</title>
+    <style>
+        :root {
+            --pos-x: 50%; /* 200px */
+            --pos-y: 10%; /* 50px */
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        body {
+            color: white;
+        }
+        .movie {
+            width: 100%;
+            /* box-sizing: border-box;
+            background-image: url("http://i.imgur.com/2tiJEnP.png");
+            background-size: cover; */
+            background: url("http://i.imgur.com/lcm5byq.png") 20px 20px/ 150px 218px no-repeat, 
+    					url("http://i.imgur.com/2tiJEnP.png") 0% 0%/cover;
+            padding: 20px 20px 20px 190px;
+        }
+        .movie__description {
+            font-size: 1.5em
+        }
+        .movie__button {
+            display: block;
+            color: #fff;
+            font-size: 0.7em;
+            padding: 13px;
+            background-color: #EB383B;
+            margin-top: 40px;
+            border: 0; /* or use, NONE*/
+        }
+
+        .bird {
+            height: 100%;
+            /* 
+            background-color: bisque;
+            background-image: url("http://i.imgur.com/ThtOO8z.png");
+            background-repeat: no-repeat;
+            background-position: var(--pos-x) var(--pos-y); */
+
+            background: bisque url("http://i.imgur.com/ThtOO8z.png") var(--pos-x) var(--pos-y) no-repeat;
+            /*
+            background sqeuence (UPS ROCA): 
+                [color]
+                url 
+                background-position 
+                background-size         ! Sould be after background-position and separated with /
+                    background: bisque url("http://i.imgur.com/ThtOO8z.png") 150px 50px / 100px 100px;
+
+                background-repeat 
+                background-origin 
+                background-clip
+                background-attachment
+            */
+        }
+
+        .element {
+            height: 100%;
+            /* background-color: #eee;
+            background-position: top 50%;     
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: contain;
+            background-origin: padding-box; 
+            background-image: url("https://i.imgur.com/9qzBYbH.jpg");
+            background-clip: border-box; */
+
+            background: #eee url(https://i.imgur.com/9qzBYbH.jpg) top left / contain no-repeat padding-box border-box fixed;
+        }
+    </style>
+</head>
+<body>
+    <div id="el" class="element" onclick="hide_image()">Click me...</div>
+    <script>
+        function hide_image() {
+            var x = document.getElementById("el");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+    <div class="movie">
+        <h1>The SuperMan</h1>
+        <p class="movie__description">An alien orphan is sent from his dying planet
+            to Earth, where he grows up to become his
+            adaptive home's first and greatest superhero.
+            <button class="movie__button">Add to Card</button>
+        </p>
+    </div>
+
+    <div class="bird"></div>
+
+</body>
+</html>
