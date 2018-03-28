@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gradients</title>
+    <link rel="stylesheet" type="text/css" href="./css/gradients.css" />
+    <style>
+        .linear {
+            width: 400px;
+            height: 300px;
+            background-image: linear-gradient(yellow, red);
+            margin: 20px auto;
+        }
+        .linear-to-right {
+            width: 400px;
+            height: 300px;
+            background-image: linear-gradient(to right, yellow, red); /* to top, to bottom, to right, to left, to top left, to top right, ... */
+            margin: 20px auto;
+        }
+        .linear-with-stops {
+            background-image: linear-gradient(to right, black, blue 30%, red);
+            width: 100vw;
+            height: 100vh;
+        }
+        .border {
+            border: 1px solid black;
+        }
+
+        #flag-fr {
+            width: 400px;
+            height: 267px;
+            background-image: linear-gradient(to right, blue 33.3333%, white 33.3333%, white 66.6666%, red 66.666%);
+            margin: 20px auto;
+        }
+        #flag-de {
+            width: 400px;
+            height: 267px;
+            background-image: linear-gradient(to bottom, black 33.3333%, red 33.3333%, red 66.6666%, gold 66.666%);
+            margin: 20px auto;
+        }
+        #flag-congo {
+            width: 400px;
+            height: 267px;
+            margin: 20px auto;
+            background-image: linear-gradient(135deg, green 40%, gold 40%, gold 60%, red 60%);
+            border: 1px solid black;
+        }
+
+        .linear_blend {
+            min-height: 100vh;
+            background: linear-gradient(rgba(192,57,43 ,0.8), rgba(44,62,80 ,0.8)),url("https://static.pexels.com/photos/97050/pexels-photo-97050.jpeg") 0% 0%/cover no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1>Linear Gradients</h1>
+    <div class="linear border"></div>
+    <br/>
+    <div class="linear-to-right border"></div>
+    <br/>
+    <div id="flag-fr" class="border"></div>
+    <br/>
+    <div id="flag-de" class="border"></div>
+    <br/>
+    <div id="flag-congo" class="border"></div>
+    <br/>
+    <div class="linear-with-stops"></div>
+    <br/>
+    <div class="linear_blend"></div>
+</body>
+</html>

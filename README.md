@@ -1,4 +1,5 @@
 # CSS-Workshop
+Based on [The Complete Advanced Guide to CSS](https://www.educative.io/collection/5191711974227968/5641332169113600) course by Ohans Emmanuel
 
 ## Installation
     npm init
@@ -39,6 +40,7 @@
 - [Material UI - Web Development Tools](https://www.materialui.co/)
 - [Coolors.co](https://coolors.co/) - online color palette generator
 - [Colorhunt.co](http://colorhunt.co/) - place to find color palettes that just work
+- [WebGradients](https://webgradients.com/) - gradients collection logo
 
 ### CSS Cooksbook
 - [CSS-Tricks](https://css-tricks.com/)
