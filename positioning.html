@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teach me positioning</title>
+    <style>
+        :root {
+            --primary-bg: rgba(44, 62, 80, 1);
+            --secondary-bg: rgba(0, 0, 0, 0.9);
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: serif;
+            background: var(--secondary-bg);
+        }
+
+        .phone-body {
+            width: 350px;
+            height: 700px;
+
+            border-radius: 30px;
+            border: 2px solid red;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .phone-inner {
+            background: var(--primary-bg);
+
+            height: 80%;
+            width: 90%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 5px;
+        }
+
+        .phone-inner:after {
+            content: '';
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: red
+        }
+
+        article {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 0.8rem;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="phone-body">
+        <div class="phone-inner">
+            <article>
+                C S S 🤯 R O C K S
+            </article>
+        </div>
+    </section>
+</body>
+
+</html>
